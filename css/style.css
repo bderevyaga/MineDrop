@@ -1,0 +1,492 @@
+@font-face {
+  font-family: MineCrafter;
+  src: url(/fonts/Minecrafter.Reg.ttf);
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url(/fonts/Ubuntu-Bold.ttf);
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+body {
+  font-family: Ubuntu;
+  color: #ffffff;
+  background-color: #000;
+}
+input:focus {
+  outline: none;
+}
+.control {
+  color: #ffe600;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-image: url(/img/border.png) 1 round;
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px;
+}
+.control .money .balance {
+  display: inline-block;
+}
+.control .money .balance span {
+  color: #fff;
+}
+.control .money .fill {
+  border: 1px #ffe600 solid;
+  padding: 5px;
+  margin-left: 10px;
+}
+.control > * {
+  display: inline-block;
+  line-height: 1;
+}
+.control a {
+  color: #ffe600;
+  text-decoration: none;
+  -webkit-transform: scaleX(1.0175);
+  transform: scaleX(1.0175);
+}
+.control a.group p {
+  font-size: 19px;
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  margin-left: 5px;
+  line-height: 1;
+}
+.control a.group p span {
+  font-size: 13px;
+  display: block;
+}
+.admin-panel {
+  margin-top: 29%;
+  width: 100%;
+  text-align: center;
+}
+.admin-panel .col {
+  display: inline-table;
+  width: 49%;
+  padding: 10px;
+}
+.admin-panel .statistics,
+.admin-panel .games {
+  background-color: #8e8e8e;
+}
+.admin-panel .statistics {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+.admin-panel .games {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+}
+.admin-panel .games table a {
+  color: #fff;
+  margin-left: 10px;
+}
+.admin-panel .green {
+  color: #c6ff00;
+}
+.purchase {
+  margin-top: 29%;
+  width: 100%;
+  text-align: center;
+}
+.purchase .price,
+.purchase .but {
+  margin: 15px;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+.purchase .key .price {
+  font-size: 40px;
+}
+header {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-image: url(/img/border.png) 1 round;
+  background-image: url(/img/background-header.png);
+  background-position: top center;
+  background-size: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+}
+header .coffer {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 27%;
+  margin-bottom: 3%;
+}
+header .coffer a {
+  display: inline-block;
+  font-size: 25px;
+  font-family: MineCrafter;
+  width: 31%;
+}
+header .coffer a.normal {
+  color: #31bc06;
+}
+header .coffer a.legendary {
+  color: #ffdb00;
+}
+header .coffer a.legendary img {
+  width: 100%;
+}
+header .coffer a.rare {
+  color: #e40000;
+}
+header .coffer a img {
+  width: 90%;
+}
+header .coffer a span {
+  font-family: MineCrafter;
+  font-size: 18px;
+}
+main {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-image: url(/img/border.png) 1 round;
+  text-align: center;
+}
+footer {
+  margin: 10px;
+}
+footer p {
+  color: rgba(255, 248, 41, 0.4);
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+}
+footer p.mail {
+  font-size: 16px;
+  font-weight: 500;
+}
+footer p.skype {
+  font-size: 14px;
+  font-weight: 700;
+}
+a.key,
+.key {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+  margin-top: 23px;
+}
+a.key img,
+.key img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+a.key .price,
+.key .price {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 3px;
+}
+a.key .price .currency,
+.key .price .currency {
+  color: #ffe400;
+}
+.logo,
+.icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  position: absolute;
+  margin: 0 auto;
+  top: 30px;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 27px;
+}
+.logo.minecraft {
+  background-image: url(/img/logo_minecraft.png);
+  width: 199px;
+}
+.logo.steam {
+  background-image: url(/img/logo_steam.png);
+  width: 153px;
+}
+.logo.cs {
+  background-image: url(/img/logo_cs.png);
+  width: 127px;
+}
+.logo.gta {
+  background-image: url(/img/logo_gta.png);
+  top: 20px;
+  width: 292px;
+  height: 38px;
+}
+.logo.origin {
+  background-image: url(/img/logo_origin.png);
+  top: 20px;
+  width: 134px;
+  height: 41px;
+}
+.logo.warface {
+  background-image: url(/img/logo_warface.png);
+  width: 201px;
+}
+.background {
+  color: rgba(255, 248, 41, 0.4);
+  border: 2px solid #FFF829;
+  width: 310px;
+  height: 131px;
+  border-radius: 25px;
+  position: relative;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.icon.vk {
+  background-image: url(/img/icon-vk.png);
+}
+.text {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-weight: 700;
+  line-height: 1;
+  display: block;
+}
+.text.golden-key,
+.text.rank {
+  color: #ffe400;
+  font-size: 29px;
+}
+.text.silver-key {
+  color: #ffffff;
+  font-size: 22px;
+}
+.text.key,
+.text.premium-account {
+  color: #ffe400;
+  top: 65px;
+  font-size: 20px;
+}
+.text.premium-account span,
+.text.key span {
+  display: block;
+  font-size: 17px;
+}
+.text.premium-account span.random,
+.text.key span.random {
+  color: #fff;
+  font-size: 28px;
+}
+.description {
+  width: 70%;
+  border: 2px solid #FFF829;
+  padding: 5px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.description.d-normal {
+  border: 2px solid #31bc06;
+}
+.description.d-normal span {
+  color: #31bc06;
+}
+.description.d-legendary {
+  border: 2px solid #ffdb00;
+}
+.description.d-legendary span {
+  color: #ffdb00;
+}
+.description.d-rare {
+  border: 2px solid #e40000;
+}
+.description.d-rare span {
+  color: #e40000;
+}
+.description .header {
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+.description .header p {
+  display: block;
+}
+.description .header p.top {
+  font-size: 22px;
+}
+.description .main.tcenter {
+  text-align: center;
+}
+.description .main,
+.description .footer {
+  margin-top: 15px;
+  text-align: left;
+}
+.description .main p,
+.description .footer p {
+  margin-bottom: 15px;
+}
+.description .main {
+  font-size: 13px;
+}
+.description .main img {
+  margin: 5px;
+  display: inline-block;
+}
+.description .footer {
+  font-size: 9px;
+}
+.description span {
+  color: #FFF829;
+}
+.buy > * {
+  display: inline-block;
+}
+.but {
+  padding: 10px 35px;
+  border-radius: 18px;
+}
+.but.buy {
+  color: #000;
+  background-color: #ffd800;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+.normal .but.buy {
+  background-color: #31bc06;
+}
+.legendary .but.buy {
+  background-color: #ffdb00;
+}
+.rare .but.buy {
+  background-color: #e40000;
+}
+.chest .normal {
+  color: #31bc06;
+}
+.chest .legendary {
+  color: #ffdb00;
+}
+.chest .rare {
+  color: #e40000;
+}
+.chest .normal img,
+.chest .legendary img,
+.chest .rare img {
+  width: 250px;
+}
+.chest .normal .price,
+.chest .legendary .price,
+.chest .rare .price {
+  font-size: 35px;
+  font-family: MineCrafter;
+}
+.chest .normal span,
+.chest .legendary span,
+.chest .rare span {
+  font-family: MineCrafter;
+  font-size: 25px;
+}
+.sum {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #ffdb00;
+  width: 60px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+.popap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  padding: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  margin: 20% auto;
+  border: 3px solid #ffdb00;
+  background-color: rgba(0, 0, 0, 0.85);
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.popap p {
+  margin-bottom: 30px;
+}
+.popap input {
+  color: #413c24;
+  background-color: #ffdb00;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 15px;
+  margin: 5px;
+}
+.popap input[type=text] {
+  text-align: center;
+  width: 300px;
+}
+@media (max-width: 992px) {
+  .description {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .control a.group p {
+    display: none;
+  }
+  .popap {
+    width: 100%;
+  }
+  .admin-panel .col {
+    width: 100%;
+  }
+}

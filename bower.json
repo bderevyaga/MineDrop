@@ -1,0 +1,28 @@
+{
+  "name": "MLSDev",
+  "description": "bad shrinkwrap is bad",
+  "main": "",
+  "authors": [
+    "Bogdan Derevyaga <bogdan.derevyaga@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/TheSpiritOfTheInternet/MLSDev",
+  "moduleType": [],
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/css/bootstrap-theme.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}
